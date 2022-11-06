@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/LambdaHelloWorld/LambdaHelloWorld/node_modules/aws-sdk
+/LambdaHelloWorld/LambdaHelloWorld/obj/Debug
+/LambdaHelloWorld/.vs/LambdaHelloWorld
+/LambdaHelloWorld/LambdaHelloWorld/bin
