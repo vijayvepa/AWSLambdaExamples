@@ -1,0 +1,1 @@
+http https://9gf5wfa0c5.execute-api.us-east-1.amazonaws.com/prod/greeting?name=Vijay

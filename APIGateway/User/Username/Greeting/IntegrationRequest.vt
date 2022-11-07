@@ -1,0 +1,6 @@
+#set($name=$input.params('username'))
+{
+#if($name != "")
+	"name": "$name"
+#end
+}
