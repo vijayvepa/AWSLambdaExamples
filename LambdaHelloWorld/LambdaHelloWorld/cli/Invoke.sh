@@ -1,0 +1,2 @@
+# https://bobbyhadz.com/blog/aws-cli-invalid-base64-lambda-error
+aws lambda invoke --function-name HelloWorld2 --payload '{ "name":"Gayatri", "greet": "Hi"}' --cli-binary-format raw-in-base64-out  sample.output

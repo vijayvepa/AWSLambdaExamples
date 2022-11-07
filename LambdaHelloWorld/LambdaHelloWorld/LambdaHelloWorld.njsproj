@@ -36,8 +36,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app.js" />
+    <Content Include="cli\Invoke.sh" />
+    <Content Include="cli\Invoke.cmd">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="cli\Payload.json">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="_sampleEvent.json" />
     <Content Include="_testdriver.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="cli\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
 </Project>

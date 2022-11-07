@@ -10,16 +10,21 @@ exports.handler = function (event, context) {
 
     }
 
-    var name = '';
-    if ('name' in event) {
-        name = event['name']
-    } else {
-        name = 'World'
-    }
-
-    var greeting = 'Hello ' + name + "!";
+    var name = getProperty(event, 'name', 'World');
+    var greet = getProperty(event, 'greet', 'Hello')
+    var greeting = greet + ' ' + name + "!";
     console.log(greeting);
 
     context.done(null, greeting);  // SUCCESS with message
     return greeting;
 };
+
+function getProperty(event, propName, defaultValue) {
+    var name = '';
+    if (propName in event) {
+        name = event[propName];
+    } else {
+        name = defaultValue;
+    }
+    return name;
+}
