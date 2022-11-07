@@ -1,0 +1,5 @@
+{
+    "myip": "$context.identity.sourceIp",
+	"path": "$context.resourcePath",
+	"stage": "$context.stage"
+}
