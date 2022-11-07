@@ -6,3 +6,6 @@
 /LambdaHelloWorld/LambdaHelloWorld/obj/Debug
 /LambdaHelloWorld/.vs/LambdaHelloWorld
 /LambdaHelloWorld/LambdaHelloWorld/bin
+/LambdaWhatIsMyIp/node_modules/aws-sdk
+/LambdaWhatIsMyIp/bin
+/LambdaWhatIsMyIp/obj/Debug
