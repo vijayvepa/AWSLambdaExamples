@@ -1,5 +1,5 @@
-#set($name = $input.params('name'))
-#set($greet = $input.params('greet'))
+#set($name = $input.params('username'))
+#set($greet = $input.params('what'))
 {
 	#if($name != "" && $greet == "")
 		"name": "$name"
