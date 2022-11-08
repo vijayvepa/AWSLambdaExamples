@@ -2,7 +2,7 @@
 	"json.schemas": [
 	{
 		"fileMatch": [
-			"/.awspolicy.json"
+			"/*.awspolicy.json"
 		],
 		"url": "https://gist.githubusercontent.com/jstewmon/ee5d4b7ec0d8d60cbc303cb515272f8a/raw/4e381019a7804b2cc186699ff171f25b06f06542/aws-iam-poilcy-schema.json"
 	}

@@ -1,0 +1,17 @@
+{
+	"Version": "2012-10-17",
+	"Statement":[
+		{
+			"Effect": "Allow",
+			"Action": [
+				"dynamodb:GetItem",
+				"dynamodb:BatchGetItem",
+				"dynamodb:PutItem",
+				"dynamodb:UpdateItem",
+				"dynamodb:BatchWriteItem",
+				"dynamodb:DeleteItem"
+			],
+			"Resource": "arn:aws:dynamodb:us-east-2:586052715488:table/tablename"
+		}
+	]
+}

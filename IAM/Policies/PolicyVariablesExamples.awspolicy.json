@@ -1,0 +1,34 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": ["s3:ListAllMyBuckets"],
+      "Resource": "arn:aws:s3:::*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": ["s3:ListBucket", "s3:GetBucketLocation"],
+      "Resource": "arn:aws:s3:::BUCKET",
+      "Condition": {
+        "StringLike": {
+          "s3:prefix": "PREFIX/",
+          "aws:Referer": ["http://www.your-website.com/*"]
+        },
+        "IpAddress": { "aws:SourceIp": ["10.1.2.0/24", "10.2.3.0/24"] },
+        "NotIpAddress": { "aws:SourceIp": ["10.1.2.0/24", "10.2.3.0/24"] },
+        "DateGreaterThan": { "aws:CurrentTime": "2016-01-01T00:00:00Z" },
+        "DateLessThan": { "aws:CurrentTime": "2016-01-01T00:00:00Z" },
+        "Bool": {
+          "aws:SecureTransport": "true",
+          "aws:MultiFactorAuthPresent": "true"
+        }
+      }
+    },
+    {
+      "Effect": "Allow",
+      "Action": ["s3:PutObject", "s3:GetObject", "s3:DeleteObject"],
+      "Resource": "arn:aws:s3:::BUCKET/PREFIX/*"
+    }
+  ]
+}
