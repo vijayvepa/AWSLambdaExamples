@@ -1,0 +1,17 @@
+{
+  "name": "lambdacreatethumbnail",
+  "version": "1.0.0",
+  "description": "Create thumbnail from an image",
+  "main": "app.js",
+  "dependencies": {
+    "async": "^3.2.4",
+    "aws-sdk": "^2.1.8",
+    "gm": "^1.25.0",
+    "util": "^0.12.5"
+  },
+  "scripts": {
+    "test": "_testdriver"
+  },
+  "author": "VijayVep",
+  "license": "ISC"
+}
